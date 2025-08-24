@@ -7,122 +7,178 @@
   <title>Mohit Bhatia | Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f4f6fa;
       color: #333;
     }
+
+    /* Header */
     header {
-      background-color: #0d47a1;
+      background: linear-gradient(135deg, #0d47a1, #1976d2);
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
-    section {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      object-fit: cover;
+      margin-bottom: 15px;
     }
+
+    h1 {
+      margin: 10px 0 5px;
+      font-size: 2.4em;
+    }
+
     h2 {
+      color: #0d47a1;
       border-bottom: 2px solid #0d47a1;
       padding-bottom: 5px;
+      margin-top: 30px;
     }
+
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* Card styling */
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+
     ul {
       list-style: none;
       padding-left: 0;
     }
+
+    li {
+      margin: 8px 0;
+      line-height: 1.5em;
+    }
+
     a {
       color: #0d47a1;
       text-decoration: none;
+      font-weight: bold;
     }
+
     a:hover {
       text-decoration: underline;
     }
-    .project {
-      margin-bottom: 15px;
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      background: #0d47a1;
+      color: white;
+      font-size: 0.9em;
     }
   </style>
 </head>
 
 <body>
   <header>
+    <img src="1674557320045.jpeg" alt="Mohit Bhatia Photo"> <!-- Photo Added -->
     <h1>Mohit Bhatia</h1>
     <p>Passionate Android Developer</p>
-    <p><a href="mailto:Mohitbhatia659@gmail.com">Mohitbhatia659@gmail.com</a> | Jaipur, Rajasthan</p>
-    <p><a href="https://github.com/Mkb8919" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/mohit-bhatia-3a4171247" target="_blank">LinkedIn</a></p>
+    <p>
+      <a href="mailto:Mohitbhatia659@gmail.com" style="color:white;">📧 Email</a> |
+      <a href="https://linkedin.com/in/mohit-bhatia-3a4171247" target="_blank" style="color:white;">🔗 LinkedIn</a> |
+      <a href="https://github.com/Mkb8919" target="_blank" style="color:white;">💻 GitHub</a>
+    </p>
   </header>
 
   <section>
-    <h2>Skills</h2>
-    <p><strong>Languages:</strong> C, C++, Java, Python</p>
-    <p><strong>Frameworks & Tools:</strong> Android Studio, PyCharm, VS Code, Git & GitHub, JDK</p>
-    <p><strong>Libraries:</strong> ViewModel, LiveData, Data Binding, Collection Framework</p>
-    <p><strong>Databases:</strong> MySQL, Room</p>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>📱 Contact Manager App</h3>
-      <p>Java, Android Studio, RecyclerView</p>
-      <p>Manage contacts with add, update, delete functionality using RecyclerView. Includes form validation and basic data storage.</p>
-      <a href="https://github.com/Mkb8919" target="_blank">GitHub</a>
+    <h2>Career Objective</h2>
+    <div class="card">
+      <p>Passionate about building impactful software solutions with a strong focus on Android development using Java and Kotlin. Currently enhancing my problem-solving skills through Data Structures and Algorithms while gaining knowledge in databases and backend concepts. Looking forward to contributing to innovative projects and continuously growing as a software developer.</p>
     </div>
 
-    <div class="project">
-      <h3>📐 Volume & Area Calculator App</h3>
-      <p>Java, MVVM, ViewModel, LiveData</p>
-      <p>Geometry calculator app using MVVM pattern. Handled state management with LiveData & ViewModel.</p>
-      <a href="https://github.com/Mkb8919" target="_blank">GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>🔁 Unit Converter App</h3>
-      <p>Java, Android Studio</p>
-      <p>Convert units like length, weight, temperature using custom logic and clean UI.</p>
-      <a href="https://github.com/Mkb8919" target="_blank">GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>🎵 Music Player App</h3>
-      <p>Java, MediaPlayer API</p>
-      <p>Music player with play, pause, seek features. Designed with custom UI controls.</p>
-      <a href="https://github.com/Mkb8919" target="_blank">GitHub</a>
-    </div>
-  </section>
-
-  <section>
     <h2>Education</h2>
-    <p><strong>JECRC Foundation, Jaipur</strong> – B.Tech in Electronics & Communication (2022–2026)<br>CGPA: 8.02</p>
-    <p><strong>Kendriya Vidyalaya No. 5, Jaipur</strong> – Senior Secondary (2021–2022)<br>Percentage: 70%</p>
-  </section>
+    <div class="card">
+      <ul>
+        <li><strong>Jaipur Engineering College and Research Centre (JECRC)</strong> – B.Tech Electronics & Communication (2022–Present) | CGPA: 7.98</li>
+        <li><strong>Kendriya Vidyalaya No.5</strong> – Senior Secondary (2021–2022) | Percentage: 67.4%</li>
+      </ul>
+    </div>
 
-  <section>
+    <h2>Internship & Training</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Internshala</strong> – Python Programming Training (Jun 2024 – Aug 2024) <br>
+          ✔️ Worked on projects like State Weather Logger and Snake Water Gun game.</li>
+        <li><strong>Upflairs – JECRC Foundation</strong> – Embedded Systems Training (Jul 2023 – Aug 2023) <br>
+          ✔️ Built PIR sensor-based motion detection system.</li>
+      </ul>
+    </div>
+
+    <h2>Projects</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Chat App</strong> – Java, Firebase, Android Studio (<a href="https://github.com/Mkb8919/ChatApp" target="_blank">GitHub</a>)</li>
+        <li><strong>E-Commerce App</strong> – Kotlin, Firebase (<a href="https://github.com/username/E-CommerceApp" target="_blank">GitHub</a>)</li>
+        <li><strong>Uber Clone</strong> – Kotlin, Firebase, Google Maps API (<a href="https://github.com/username/UberClone" target="_blank">GitHub</a>)</li>
+      </ul>
+    </div>
+
+    <h2>Technical Skills</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Languages:</strong> C/C++, Java, Python</li>
+        <li><strong>Android Development:</strong> Java, Kotlin, Firebase, Retrofit, Room, Google Maps API</li>
+        <li><strong>Architecture & Patterns:</strong> MVVM, LiveData, ViewModel, Data Binding</li>
+        <li><strong>Databases:</strong> MySQL, NoSQL</li>
+      </ul>
+    </div>
+
     <h2>Certifications</h2>
-    <ul>
-      <li>✔️ Introduction to Programming using Python – Internshala</li>
-      <li>✔️ Industrial Training (Embedded Systems) – Up-fairs</li>
-    </ul>
+    <div class="card">
+      <ul>
+        <li><a href="https://drive.google.com/file/d/1NmWko8EjwG7DkVfiK2Y9qGrqyo09LyVz/view?usp=sharing" target="_blank">Deloitte Technology Job Simulation – Forage</a></li>
+        <li><a href="https://drive.google.com/file/d/1m6kTEYdT8YPSGNSmyYFS3Mcpbqi3xC-e/view?usp=sharing" target="_blank">Introduction to Python – Internshala</a></li>
+        <li><a href="https://drive.google.com/file/d/1-mxDckoEIa4GN_gqu2cdUk8ekULWxdOa/view?usp=sharing" target="_blank">Android 15 Course Part 1 – Udemy</a></li>
+        <li><a href="https://drive.google.com/file/d/1Vs26VMx_tMgQ0grcrLm4QLOc5ZrhDRMA/view?usp=sharing" target="_blank">Embedded Systems Training – Upflairs</a></li>
+      </ul>
+    </div>
+
+    <h2>Achievements & Extracurricular</h2>
+    <div class="card">
+      <ul>
+        <li>JIC Induction 2.0 – JECRC (May 2023)</li>
+        <li>Mechanical Workshop – Project Exhibition (Feb 2023)</li>
+        <li>Real Life Application of Fibonacci Number & Golden Ratio – JECRC (Dec 2022)</li>
+        <li>Volunteered in <strong>Paytm Founder’s Talk</strong> (event management & hospitality)</li>
+        <li>Co-organized <strong>Entrapithon (12-hour hackathon)</strong></li>
+        <li>Managed <strong>3-day Entrepreneurship Program</strong> at JIC</li>
+        <li>Served as <strong>Graphic Design & Event Support Team Member</strong> at JIC</li>
+      </ul>
+    </div>
   </section>
 
-  <section>
-    <h2>Achievements</h2>
-    <ul>
-      <li>🏅 JIC Induction Program 2.0</li>
-      <li>🏅 Mechanical Workshop Project Exhibition</li>
-      <li>🏅 Working Model Project Exhibition</li>
-      <li>🏅 Real Life Application of Fibonacci Number and Golden Ratio</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:Mohitbhatia659@gmail.com">Mohitbhatia659@gmail.com</a></p>
-    <p>Phone: <a href="tel:+918290810262">+91 8290810262</a></p>
-    <p>Location: Jaipur, Rajasthan, India</p>
-  </section>
+  <footer>
+    <p>📍 Jaipur, Rajasthan | 📧 Mohitbhatia659@gmail.com | 📱 +91 8290810262</p>
+  </footer>
 </body>
 
 </html>
+
